@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    padding-top:srem;
+    background: url(/assets/movie.jpg.jpg);
+    background-size: cover;
+}
+.starter-template{
+    padding: jrem 1.srem;
+    text-align: center;
+
+
+}

@@ -1,0 +1,40 @@
+<!--Div means division is a section or part of the template -->
+<div class="col-md-6" >
+    <!--headings are represented by different tags based on the font size-->
+    <!--h1 tag has the largest font-->
+    <h2>Movie Screens</h2>
+      <table class="table table-stripped">
+        <!--tbale hover class adds a hover effect (grey background color) on table rows-->
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Screen Id</th>
+            <th>theatre ID</th>
+            <th>Screen Name</th>
+            <th>No of Rows</th>
+            <th>No of Columns</th>
+          </tr>
+        </thead>
+    <!--{{}} this brackets are used for one way binding-->
+    <tbody>
+         <tr *ngFor="let screen of screens| async  ;let i=index;">
+           <td>{{i+1}}</td>
+           <td>{{scren.screenId}}</td>
+           <td>{{screen.theatreId}}</td>
+           <td>{{scren.screenName}}</td>
+           <td>{{scren.rows}}</td>
+           <td>{{scren.columns}}</td>
+           <td><button (click)="deleteScreenById(scren)"type="button" class="btn btn-outline-danger">Delete Screen</button></td>
+           <td><button (click)="update()" class="btn btn-light">Update</button></td>
+
+         </tr>
+     
+        </tbody>
+    
+      </table>
+   <!--&nbsp is used for getting space-->
+  
+        
+  
+  
+    </div>
